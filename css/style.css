@@ -1,0 +1,350 @@
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: #2B4074;
+
+}
+.menu-button{
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.container{
+    max-width: 1150px;
+}
+header{
+    padding:17px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+/*Into section*/
+.main-page{
+    color:#fff;
+    background: url("../images/main-page/bg.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding:117px 0px 250px 0px;
+}
+.intro-title{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 96px;
+    text-transform: capitalize;
+}
+.intro-text{
+    font-family: "Roboto Condensed", sans-serif;
+    margin:20px 0;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 26px;
+}
+.intro-button{
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 18px;
+    background:#2B4074;
+    padding:16px 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.intro-button:hover{
+    color:#dadada;
+    background-color: #202f55;
+}
+.intro{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/*Promo section*/
+.promo{
+    margin:0 auto;
+    padding:57px 140px;
+    background-color: #2B4074;   
+    color:#fff;
+}
+.promo .container{
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.promo-button{
+    border-radius: 5px;
+    padding:17px 9px;
+    background-color: #F9F6E5;
+    color: #2B4074;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.promo-button:hover{
+    background-color:#dbd9c9 ;
+    color: #253764;
+}
+.promo-text{
+    max-width: 450px;
+}
+.promo-text h2{
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.promo-text p{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 16px;
+}
+/*Service section*/
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.services-content{
+    margin-left:62px;
+    max-width: 350px;
+}
+.services-content h2{
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 60px;
+    color: #2B4074;
+    font-weight: 400;
+    font-size: 48px;
+}
+.services-content h4{
+    color:#4A4A4A;
+    font-size: 24px;
+    line-height: 26px;
+}
+.services-content h4::after{
+    display: block;
+    content:'';
+    width: 100px;
+    height: 8px;
+    background-color: #2B4074;
+    margin:30px 0;
+}
+.services-content p{
+    font-size: 18px;
+    line-height: 24px;
+}
+.service-items{
+    display: grid;
+    grid-template-columns: 0.85fr 0.85fr 0.85fr 0.85fr;
+}
+.service-items-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:80px;
+    border:1px solid #F9F6E5;
+}
+/*Recent works section*/
+.recent-works{
+    padding:90px;
+    background: rgb(43,64,116);
+    background: linear-gradient(180deg, rgba(43,64,116,1) 20%, rgba(43,64,116,0.2329306722689075) 100%);
+}
+.recent-works .container{
+    margin:0 auto;
+}
+.recent-works_works{
+    display: flex;
+}
+.recent-works_title{
+    margin:20px 0;
+    text-align: center;
+    color:#fff;
+    max-width: 400px;
+    margin:0 auto;
+}
+.recent-works_title::after{
+    display: block;
+    margin: 0 auto;
+    content:'';
+    width: 100px;
+    height: 8px;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.recent-works_items h3{
+    text-align: center;
+    color:#2B4074;
+    margin-top: 29px;
+}
+.recent-works_items{
+    margin-right: 25px;
+}
+.recent-works_title h2{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+/*Video block*/
+.video-block{
+    padding:75px 0;
+}
+
+.video-block .container{
+    margin: 0 auto;
+}
+.video-block_container{
+    display: flex;
+    justify-content: space-between;
+}
+.video-block_information{
+    width: 535px;
+    float:left;
+}
+.video-block_information h1{
+    font-family: "Roboto Condensed", sans-serif;
+    color:#4A4A4A;
+    font-size: 42px;
+    font-weight: 400;
+}
+.video-block_information h1::after{
+    display: block;
+    content: '';
+    background-color: #2B4074;
+    width:113px;
+    height: 8px;
+    margin: 35px 0;
+}
+.video-block_information p{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    color:#9B9B9B;
+}
+.video-block_button{
+    width: 230px;
+    display: flex;
+    padding:21px 35px;
+    background-color:#2B4074;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.video-block_button:hover{
+    color:#dadada;
+    background-color: #202f55;
+}
+.video-block_button a{
+    text-decoration: none;
+    color:#fff;
+}
+/*Latest news*/
+.latest-news{
+    background-color: #F9F6E5;
+    padding:65px 0px;
+    text-align: center;
+}
+.latest-news_container{
+    margin:0 auto;
+    max-width: 1200px;
+}
+.news{
+    column-count: 4;
+    column-gap: 31px;
+}
+.latest-news_container h1{
+    color: #2B4074;
+
+}
+.latest-news_container h1::after{
+    display: block;
+    content: "";
+    width:100px;
+    height: 8px;
+    background-color: #2B4074;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 115px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    background-color: #fff;
+    color:#4A4A4A;
+    transition: 0.2s ease-in;
+}
+.card p{
+    padding:10px 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+}
+.card:hover{
+    border:8px solid #2B4074;
+    position: relative;
+}
+.card:hover p{
+    position: absolute;
+    background-color: #2B4074;
+    left:0;
+    bottom:20px;
+    width: 100%;
+    color:#F9F6E5;
+}
+/*Testimontal*/
+.testimontal{
+    padding:125px 0;
+    color:#4A4A4A;
+}
+.testimontal .container{
+    margin:0 auto;
+    max-width: 775px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.testimontal .container h1 span{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+.testimontal .container h1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 36px;
+}
+.testimontal .container h2{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.testimontal .container h1::before{
+    display: block;
+    content:url(../images/citata/quote.svg);
+    margin-bottom: 30px;
+}
