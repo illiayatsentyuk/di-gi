@@ -155,6 +155,10 @@ header .container{
     display: grid;
     grid-template-columns: 0.85fr 0.85fr 0.85fr 0.85fr;
 }
+.detalnishe{
+    color: #2B4074;
+    display:none;
+}
 .service-items-card{
     display: flex;
     flex-direction: column;
@@ -162,6 +166,12 @@ header .container{
     align-items: center;
     padding:80px;
     border:1px solid #F9F6E5;
+}
+.service-items-card:hover{
+    border:2px solid #2B4074;
+}
+.service-items-card:hover .detalnishe{
+    /* display: block; */
 }
 /*Recent works section*/
 .recent-works{
@@ -289,6 +299,7 @@ header .container{
     margin-bottom: 115px;
 }
 .card{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -300,6 +311,11 @@ header .container{
     transition: 0.2s ease-in;
 }
 .card p{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left:0;
+    bottom:0;
     padding:10px 0;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
@@ -347,4 +363,83 @@ header .container{
     display: block;
     content:url(../images/citata/quote.svg);
     margin-bottom: 30px;
+}
+/*FOoter*/
+footer{
+    position: relative;
+    padding:125px 0;
+    background-color: #2B4074;
+}
+footer .container{
+
+    margin:0 auto;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+.footer-content h2{
+    font-family: "Roboto",sans-serif;
+    max-width: 550px;
+    color:#fff;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 80px;
+}
+.social{
+    display: flex;
+
+}
+.social-el{
+    border:1px solid #7EBF84;
+    padding:20px 140px;
+}
+.social .social-el:first-child{
+    border-left: none;
+}
+.social .social-el:last-child{
+    border-right: none;
+}
+.additional-info{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.additional-info ul{
+    color:#F9F6E5;
+    list-style: none;
+    color:#fff;
+}
+.additional-info ul li:first-child{
+    margin-bottom: 20px;
+}
+.additional-info ul li{
+    cursor: pointer;
+    margin:10px;
+}
+.footer-logo{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    padding:4px 72px;
+    background-color: #2B4074;
+    top:-27.5px;
+}
+/*Copyright*/
+.copy-right{
+    padding:10px 0;
+    background-color: #F9F6E5;
+}
+.copy-right .container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.copy-right .container p{
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    color:#4A4A4A;
+    margin-right: 9px;
 }
