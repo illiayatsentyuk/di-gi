@@ -155,10 +155,7 @@ header .container{
     display: grid;
     grid-template-columns: 0.85fr 0.85fr 0.85fr 0.85fr;
 }
-.detalnishe{
-    color: #2B4074;
-    display:none;
-}
+
 .service-items-card{
     display: flex;
     flex-direction: column;
@@ -166,12 +163,101 @@ header .container{
     align-items: center;
     padding:80px;
     border:1px solid #F9F6E5;
+    text-align: center;
 }
+.service-items-card.el1 img{
+    mask-image: url('../images/services/Strategy.svg');
+    background: #253764;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    min-width: 64px;
+    min-height: 64px;
+}
+.service-items-card.el2 img{
+    mask-image: url('../images/services/Analis.svg');
+    background: #253764;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    min-width: 64px;
+    min-height: 64px;
+}
+.service-items-card.el3 img{
+    mask-image: url('../images/services/Society.svg');
+    background: #253764;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    min-width: 64px;
+    min-height: 64px;
+}
+.service-items-card.el4 img{
+    mask-image: url('../images/services/Rozvitok.svg');
+    background: #253764;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    min-width: 64px;
+    min-height: 64px;
+}
+.service-items-card.el5 img{
+    mask-image: url('../images/services/content.svg');
+    background: #253764;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    min-width: 64px;
+    min-height: 64px;
+}
+.service-items-card.el6 img{
+    mask-image: url('../images/services/Design.svg');
+    background: #253764;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    min-width: 64px;
+    min-height: 64px;
+}
+.service-items-card.el7 img{
+    mask-image: url('../images/services/Advirtise.svg');
+    background: #253764;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    min-width: 64px;
+    min-height: 64px;
+}
+.service-items-card.el8 img{
+    mask-image: url('../images/services/Product.svg');
+    background: #253764;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    min-width: 64px;
+    min-height: 64px;
+}
+/* .service-items-card img{
+    margin-bottom: 20px;
+}
+.service-items-card:hover img{
+    margin-top: -100px;
+} */
 .service-items-card:hover{
-    border:2px solid #2B4074;
+    outline:5px solid #2B4074;
+    outline-offset: -10px;
+    /* padding:30px 90px; */
 }
 .service-items-card:hover .detalnishe{
-    /* display: block; */
+    visibility: visible;
+    /* margin-top: 50px; */
+}
+.service-items-card:hover p{
+    /* margin-bottom: 87px; */
+}
+.detalnishe{
+    color: #2B4074;
+    visibility: hidden;
 }
 /*Recent works section*/
 .recent-works{
@@ -309,6 +395,7 @@ header .container{
     background-color: #fff;
     color:#4A4A4A;
     transition: 0.2s ease-in;
+    margin-bottom: 30px;
 }
 .card p{
     position: absolute;
@@ -321,7 +408,8 @@ header .container{
     font-weight: bold;
 }
 .card:hover{
-    border:8px solid #2B4074;
+    outline: 8px solid #2B4074;
+    outline-offset: -2px; 
     position: relative;
 }
 .card:hover p{
@@ -334,6 +422,7 @@ header .container{
 }
 /*Testimontal*/
 .testimontal{
+    position: static;
     padding:125px 0;
     color:#4A4A4A;
 }
