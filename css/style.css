@@ -105,6 +105,16 @@ header .container{
         font-size:34px;
         line-height: 28px;
         font-weight: 400;
+        width:240px;
+    }
+    .intro-title::after{
+        margin: 0 auto;
+        display: block;
+        content: " ";
+        width:60px;
+        height: 8px;
+        background-color: #4A4A4A;
+        margin-top: 30px;
     }
     .intro-button{
         display: none
@@ -395,6 +405,15 @@ header .container{
         max-width: 550px;
     }
 }
+@media(max-width:768px){
+    .service-items{
+        width:100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 335px 335px 335px 335px;
+        height: auto;
+    }
+}
 @media(max-width:634px){
     .services{
         display: flex;
@@ -404,9 +423,9 @@ header .container{
     .service-items{
         display: grid;
         grid-template-columns: 282px;
-        grid-template-rows: 308px;
         height: 2488px;
         margin-bottom: 40px;
+        justify-content: center;
     }
     .services-content{
         padding:0;
@@ -431,6 +450,7 @@ header .container{
         margin:30px auto;
     }
 }
+
 /*Recent works section*/
 .recent-works{
     padding:90px;
@@ -718,7 +738,7 @@ header .container{
 }
 .card:hover{
     outline: 8px solid #2B4074;
-    outline-offset: -2px; 
+    outline-offset: -8px; 
     position: relative;
 }
 .card:hover p{
@@ -786,6 +806,12 @@ header .container{
     .testimontal .container{
         text-align: center;
         max-width: 480px;
+    }
+}
+@media(max-width:450px){
+    .testimontal .container{
+        text-align: center;
+        max-width: 350px;
     }
 }
 /*FOoter*/
@@ -902,7 +928,7 @@ footer .container{
         height: auto;
     }
     .social-el{
-        margin:10px 0;
+        margin:10px auto;
         border:none;
     }
     .footer-content{
