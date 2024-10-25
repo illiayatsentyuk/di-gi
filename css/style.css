@@ -38,12 +38,13 @@ header .container{
 }
 /*Into section*/
 .main-page{
+    position: relative;
     color:#fff;
     background: url("../images/main-page/bg.png") no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding:117px 0px 250px 0px;
+    height: 666px;
 }
 .intro-title{
     font-family: "Roboto Condensed", sans-serif;
@@ -72,6 +73,9 @@ header .container{
     justify-content: center;
     transition: 0.2s;
     cursor: pointer;
+    width:200px;
+    height: 50px;
+    margin: 0 auto;
 }
 .intro-button:hover{
     color:#dadada;
@@ -120,6 +124,57 @@ header .container{
         display: none
     }
 
+}
+.carousel-controls{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:50%;
+    right:0;
+}
+.carousel-controls--prev{
+    background-color: #202f55;
+    width:70px;
+    height: 70px;
+    border:none;
+}
+.carousel-controls--prev::before{
+    content:"";
+    mask-image: url("../images/main-page/checkMark.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background: #fff;
+}
+.carousel-controls--next{
+    background-color: #202f55;
+    width: 70px;
+    height: 70px;
+    border:none;
+}
+.carousel-controls--next::before{
+    content:"";
+    mask-image: url("../images/main-page/checkMark.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    rotate:180deg;
+    background: #fff;
+}
+.carousel-intro__wr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.carousel-item{
+    height: 350px;
+}
+
+.carousel-item.active{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 /*Promo section*/
 .promo{
