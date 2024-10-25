@@ -422,6 +422,14 @@ header .container{
         line-height: 24px;
         font-weight: 400;
     }
+    .services-content h4::after{
+        display: block;
+        content:'';
+        width: 100px;
+        height: 8px;
+        background-color: #2B4074;
+        margin:30px auto;
+    }
 }
 /*Recent works section*/
 .recent-works{
