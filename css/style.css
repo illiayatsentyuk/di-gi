@@ -100,6 +100,17 @@ header .container{
         margin-bottom: 30px;
     }
 }
+@media(max-width:530px){
+    .intro-title{
+        font-size:34px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+    .intro-button{
+        display: none
+    }
+
+}
 /*Promo section*/
 .promo{
     margin:0 auto;
@@ -384,6 +395,34 @@ header .container{
         max-width: 550px;
     }
 }
+@media(max-width:634px){
+    .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .service-items{
+        display: grid;
+        grid-template-columns: 282px;
+        grid-template-rows: 308px;
+        height: 2488px;
+        margin-bottom: 40px;
+    }
+    .services-content{
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        width:280px;
+    }
+    .services-content h4{
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+}
 /*Recent works section*/
 .recent-works{
     padding:90px;
@@ -493,6 +532,14 @@ header .container{
         grid-template-columns: 1fr;
         justify-content: center;
     }
+    .recent-works_items{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .recent-works_items-img{
+        margin:0 auto;
+    }
 }
 /*Video block*/
 .video-block{
@@ -566,6 +613,48 @@ header .container{
     }
     .video-block_button{
         margin-left:-100px;
+    }
+}
+@media(max-width:700px){
+    .video-block .container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .video-block_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .video-block_button{
+        margin:0 auto;
+    }
+    .video-block_information{
+        text-align: center;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:450px;
+    }
+    .video-block_information h1{
+        margin-top:50px;
+    }
+    .video-block_information h1::after{
+        margin:35px auto;
+    }
+    .video-block_container img{
+        width:100%;
+        height: 100%;
+    }
+}
+@media(max-width:510px){
+    .video-block_container img{
+        width:281px;
+        height: 241px;
+    }
+    .video-block_information{
+        width:270px;
     }
 }
 /*Latest news*/
@@ -647,6 +736,11 @@ header .container{
         margin:0 80px;
     }
 }
+@media(max-width:510px){
+    .news{
+        column-count: 1;
+    }
+}
 /*Testimontal*/
 .testimontal{
     position: static;
@@ -679,6 +773,12 @@ header .container{
     display: block;
     content:url(../images/citata/quote.svg);
     margin-bottom: 30px;
+}
+@media(max-width:770px){
+    .testimontal .container{
+        text-align: center;
+        max-width: 480px;
+    }
 }
 /*FOoter*/
 footer{
@@ -780,6 +880,34 @@ footer .container{
         margin-top:28px;
     }
 }
+@media(max-width:450px){
+    .footer-content h2{
+        font-size: 22px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0 auto;
+        height: auto;
+    }
+    .social-el{
+        margin:10px 0;
+        border:none;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .additional-info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
 /*Copyright*/
 .copy-right{
     padding:10px 0;
@@ -795,5 +923,8 @@ footer .container{
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
     color:#4A4A4A;
-    margin-right: 9px;
+    margin-right: 10px;
+}
+.copy-right .container img{
+    margin-right: 20px;
 }
