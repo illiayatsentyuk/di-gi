@@ -423,7 +423,7 @@ header .container{
     .service-items{
         display: grid;
         grid-template-columns: 282px;
-        height: 2488px;
+        grid-template-rows: repeat(8, 335px);
         margin-bottom: 40px;
         justify-content: center;
     }
